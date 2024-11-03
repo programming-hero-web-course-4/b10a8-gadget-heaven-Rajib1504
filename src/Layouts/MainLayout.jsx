@@ -5,8 +5,10 @@ import Nav from "../assets/Components/Nav";
 const MainLayout = () => {
   return (
     <div>
-      {/* nav */}
-      <Nav></Nav>
+      <div className="relative z-[1000] ">
+        {/* nav */}
+        <Nav></Nav>
+      </div>
       {/* Dynamic body */}
       <div className="min-h-[calc(100vh-288px)]">
         <Outlet />

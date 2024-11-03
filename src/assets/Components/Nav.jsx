@@ -3,17 +3,21 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
-    <div>
+    <div className="mt-5">
       <div className="navbar bg-transparent">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn text-white btn-ghost lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                stroke="white"
               >
                 <path
                   strokeLinecap="round"
@@ -38,11 +42,11 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost hover:bg-transparent text-xl">
+          <a className="btn btn-ghost hover:bg-transparent text-white font-bold text-2xl">
             Gadget World
           </a>
         </div>
-        <div className="navbar-center  border-2 hidden lg:flex">
+        <div className="navbar-center text-white hidden lg:flex">
           <ul className="menu menu-horizontal gap-2 font-semibold px-1">
             <li>
               <NavLink to={"/"}>Home</NavLink>
