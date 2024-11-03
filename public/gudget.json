@@ -1,0 +1,123 @@
+[
+      {
+      "product_id": 1,
+      "product_title": "DJI Mavic Air 2",
+      "product_image": "https://ibb.co/hYC0jKg",
+      "category": "drone",
+      "price": "$799",
+      "description": "Compact and powerful drone with advanced features.",
+      "Specification": ["4K video", "34-minute flight time", "48MP camera"],
+      "availability": true,
+      "rating": 4.7,
+      "other_field": "2 extra batteries included"
+      },
+      {
+      "product_id": 2,
+      "product_title": "Bose QuietComfort Earbuds",
+      "product_image": "https://ibb.co/bHGHyLk",
+      "category": "earbuds",
+      "price": "$279",
+      "description": "Premium noise-canceling earbuds with high-fidelity sound.",
+      "Specification": ["Active noise cancellation", "Transparency mode", "Long battery life"],
+      "availability": true,
+      "rating": 4.7,
+      "other_field": "Secure fit"
+      },
+      {
+      "product_id": 3,
+      "product_title": "MacBook Pro 16\"",
+      "product_image": "https://ibb.co/59mFLXW",
+      "category": "laptop",
+      "price": "$2499",
+      "description": "High-performance laptop with the Apple M1 Pro chip.",
+      "Specification": ["M1 Pro chip", "16GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.9,
+      "other_field": "3 Thunderbolt ports"
+      },
+      {
+      "product_id": 4,
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://ibb.co/SKg1hK2",
+      "category": "mobile",
+      "price": "$999",
+      "description": "Apple's latest smartphone with advanced camera system.",
+      "Specification": ["A15 Bionic chip", "ProMotion display", "5G capable"],
+      "availability": true,
+      "rating": 4.8,
+      "other_field": "Comes with MagSafe support"
+      },
+      {
+      "product_id": 5,
+      "product_title": "Oculus Quest 2",
+      "product_image": "https://ibb.co/BrXJBfG",
+      "category": "3d viewer",
+      "price": "$299",
+      "description": "All-in-one VR headset with immersive experiences.",
+      "Specification": ["6GB RAM", "1832x1920 resolution", "64GB storage"],
+      "availability": true,
+      "rating": 4.6,
+      "other_field": "No PC required"
+      },
+      {
+      "product_id": 6,
+      "product_title": "Apple AirPods Pro",
+      "product_image": "https://ibb.co/yWqpbJ1",
+      "category": "air pods",
+      "price": "$249",
+      "description": "Wireless earbuds with active noise cancellation.",
+      "Specification": ["Active noise cancellation", "Transparency mode", "Sweat and water resistant"],
+      "availability": true,
+      "rating": 4.5,
+      "other_field": "Spatial audio support"
+      },
+      {
+      "product_id": 7,
+      "product_title": "Sony Alpha a7 III",
+      "product_image": "https://ibb.co/VVZhQF6",
+      "category": "camera",
+      "price": "$1999",
+      "description": "Mirrorless camera with exceptional image quality.",
+      "Specification": ["24.2MP", "4K video", "5-axis stabilization"],
+      "availability": true,
+      "rating": 4.8,
+      "other_field": "Dual SD card slots"
+      },
+      {
+      "product_id": 8,
+      "product_title": "Dell XPS 13",
+      "product_image": "https://ibb.co/y6f3KCB",
+      "category": "laptop",
+      "price": "$1299",
+      "description": "Compact and powerful ultrabook with InfinityEdge display.",
+      "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.7,
+      "other_field": "Thunderbolt 4 ports"
+      },
+      {
+      "product_id": 9,
+      "product_title": "Samsung Galaxy S21",
+      "product_image": "https://ibb.co/9hdGRFr",
+      "category": "mobile",
+      "price": "$799",
+      "description": "Flagship smartphone with high-quality camera and display.",
+      "Specification": ["Exynos 2100", "120Hz display", "64MP camera"],
+      "availability": true,
+      "rating": 4.6,
+      "other_field": "8K video recording"
+      },
+      {
+      "product_id": 10,
+      "product_title": "Parrot Anafi",
+      "product_image": "https://ibb.co/Cmrq4MY",
+      "category": "drone",
+      "price": "$699",
+      "description": "Lightweight drone with excellent 4K HDR camera.",
+      "Specification": ["4K HDR", "21MP sensor", "25-minute flight time"],
+      "availability": false,
+      "rating": 4.4,
+      "other_field": "Folds easily for transport"
+      }
+      
+      ]
