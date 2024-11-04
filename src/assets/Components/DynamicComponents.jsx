@@ -10,12 +10,14 @@ const DynamicComponents = ({ catagories }) => {
       </h3>
       <div className="grid mx-auto mt-5 grid-flow-row sm:grid-flow-col w-full sm:w-[80%] sm:grid-cols-12 gap-2 ">
         {/* catagories btns  */}
-        <div className="catagories  sm:col-span-2 p-3 flex sm:grid items-center flex-wrap justify-center gap-2  rounded-xl bg-white">
+        <div className="catagories  sm:col-span-2 p-3 flex sm:grid items-center sm:h-[35%] flex-wrap justify-center gap-2  rounded-xl bg-white">
           <button className="btn p-4 btn-outline bg-base-200 border-0 hover:bg-[#9538E2] hover:border-0  rounded-full">
-            <Link to={"/home"}>All Products</Link>
+            <Link className="active" to={"/home"}>
+              All Products
+            </Link>
           </button>
           <button className="btn p-4 btn-outline bg-base-200 border-0 hover:bg-[#9538E2] hover:border-0 rounded-full">
-            <Link to={"/laptops"}> Laptops</Link>
+            <Link to={"/"}> Laptops</Link>
           </button>
           <button className="btn p-4 btn-outline bg-base-200 border-0 hover:bg-[#9538E2] hover:border-0 rounded-full">
             <Link to={"/phones"}> Phones</Link>
