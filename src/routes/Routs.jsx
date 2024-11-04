@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         // index: true,
         path: "/home",
         element: <Home></Home>,
-        // loader: () => fetch("/gudget.json"),
+        loader: () => fetch("/gudget.json"),
       },
       {
         path: "/Dashbord",

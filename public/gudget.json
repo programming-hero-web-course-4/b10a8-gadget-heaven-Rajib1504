@@ -2,7 +2,7 @@
       {
       "product_id": 1,
       "product_title": "DJI Mavic Air 2",
-      "product_image": "https://ibb.co/hYC0jKg",
+      "product_image": "https://i.ibb.co/PDtkn5r/img-1.jpg",
       "category": "drone",
       "price": "$799",
       "description": "Compact and powerful drone with advanced features.",
@@ -13,8 +13,8 @@
       },
       {
       "product_id": 2,
-      "product_title": "Bose QuietComfort Earbuds",
-      "product_image": "https://ibb.co/bHGHyLk",
+      "product_title": "Bose Comfort Earbuds",
+      "product_image": "https://i.ibb.co/0CV1vQD/mimg.webp",
       "category": "earbuds",
       "price": "$279",
       "description": "Premium noise-canceling earbuds with high-fidelity sound.",
@@ -26,7 +26,7 @@
       {
       "product_id": 3,
       "product_title": "MacBook Pro 16\"",
-      "product_image": "https://ibb.co/59mFLXW",
+      "product_image": "https://i.ibb.co/yRtSqmn/img-3.jpg",
       "category": "laptop",
       "price": "$2499",
       "description": "High-performance laptop with the Apple M1 Pro chip.",
@@ -38,7 +38,7 @@
       {
       "product_id": 4,
       "product_title": "iPhone 13 Pro",
-      "product_image": "https://ibb.co/SKg1hK2",
+      "product_image": "https://i.ibb.co/553zN5d/img-4.webp",
       "category": "mobile",
       "price": "$999",
       "description": "Apple's latest smartphone with advanced camera system.",
@@ -50,7 +50,7 @@
       {
       "product_id": 5,
       "product_title": "Oculus Quest 2",
-      "product_image": "https://ibb.co/BrXJBfG",
+      "product_image": "https://i.ibb.co/QC2VMJk/img-5.jpg",
       "category": "3d viewer",
       "price": "$299",
       "description": "All-in-one VR headset with immersive experiences.",
@@ -62,7 +62,7 @@
       {
       "product_id": 6,
       "product_title": "Apple AirPods Pro",
-      "product_image": "https://ibb.co/yWqpbJ1",
+      "product_image": "https://i.ibb.co/t8DzW5t/img-6.jpg",
       "category": "air pods",
       "price": "$249",
       "description": "Wireless earbuds with active noise cancellation.",
@@ -74,7 +74,7 @@
       {
       "product_id": 7,
       "product_title": "Sony Alpha a7 III",
-      "product_image": "https://ibb.co/VVZhQF6",
+      "product_image": "https://i.ibb.co/cJHpCWq/img-7.jpg",
       "category": "camera",
       "price": "$1999",
       "description": "Mirrorless camera with exceptional image quality.",
@@ -86,7 +86,7 @@
       {
       "product_id": 8,
       "product_title": "Dell XPS 13",
-      "product_image": "https://ibb.co/y6f3KCB",
+      "product_image": "https://i.ibb.co/X72w6Pk/img-8.webp",
       "category": "laptop",
       "price": "$1299",
       "description": "Compact and powerful ultrabook with InfinityEdge display.",
@@ -98,7 +98,7 @@
       {
       "product_id": 9,
       "product_title": "Samsung Galaxy S21",
-      "product_image": "https://ibb.co/9hdGRFr",
+      "product_image": "https://i.ibb.co/2Sp5XDk/img-9.jpg",
       "category": "mobile",
       "price": "$799",
       "description": "Flagship smartphone with high-quality camera and display.",
@@ -110,7 +110,7 @@
       {
       "product_id": 10,
       "product_title": "Parrot Anafi",
-      "product_image": "https://ibb.co/Cmrq4MY",
+      "product_image": "https://i.ibb.co/VJKdbQz/img-10.jpg",
       "category": "drone",
       "price": "$699",
       "description": "Lightweight drone with excellent 4K HDR camera.",

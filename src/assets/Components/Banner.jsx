@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 const Banner = ({ title, subtitle }) => {
   return (
     <div className=" ">
-      <div className="rounded-xl border-2 border-gray-200 p-1 bg-base-100">
-        <div className="hero rounded-xl bg-[#9538E2] ">
-          <div className="hero-content pt-20 sm:pt-28 pb-48 text-center">
+      <div className="rounded-xl border-2 border-t-0 border-gray-200 p-1 pt-0 bg-base-100">
+        <div className="hero rounded-xl rounded-t-none bg-[#9538E2] ">
+          <div className="hero-content pb-28 text-center">
             <div className="flex-col flex items-center text-center">
               <h1 className=" text-2xl sm:text-3xl md:text-5xl text-white w-full sm:w-[70%]  font-bold">
                 {title}

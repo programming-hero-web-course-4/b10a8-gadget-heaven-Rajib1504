@@ -1,13 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../assets/Components/Banner";
-// import DynamicComponents from "../assets/Components/DynamicComponents";
+import DynamicComponents from "../assets/Components/DynamicComponents";
 
 const Home = () => {
   const catagories = useLoaderData();
   console.log(catagories);
   return (
     <div className="bg-base-200">
-      im the home
       {/* banner with btn & hero img */}
       <Banner
         title={"Upgrade Your Tech Accessorize with Gadget Heaven Accessories"}
@@ -18,10 +17,7 @@ const Home = () => {
       {/* title */}
       {/* Dynamic nested components */}
       {/* Catagories section */}
-      {/* <DynamicComponents
-        key={catagories.product_id}
-        catagories={catagories}
-      ></DynamicComponents> */}
+      <DynamicComponents catagories={catagories}></DynamicComponents>
     </div>
   );
 };
