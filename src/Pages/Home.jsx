@@ -3,7 +3,7 @@ import DynamicComponents from "../assets/Components/DynamicComponents";
 
 const Home = () => {
   return (
-    <div className="bg-base-100">
+    <div className="bg-base-200">
       {/* banner with btn & hero img */}
       <Banner
         title={"Upgrade Your Tech Accessorize with Gadget Heaven Accessories"}

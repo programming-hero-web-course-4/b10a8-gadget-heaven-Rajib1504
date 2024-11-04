@@ -15,7 +15,7 @@ const Banner = ({ title, subtitle }) => {
           </div>
         </div>
       </div>
-      <div className=" relative border-b-2 top-[-11rem] flex justify-center ">
+      <div className=" relative  top-[-11rem] flex justify-center ">
         <figure className=" flex justify-center ">
           <img
             className="imageContainer border-2 border-gray-200 p-3 rounded-xl bg-transparent w-2/3 "
