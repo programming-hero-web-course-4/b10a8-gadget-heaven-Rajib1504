@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 const Banner = ({ title, subtitle }) => {
   return (
-    <div className="relative top-[-6rem] z-20 ">
+    <div className="relative  top-[-6rem] ">
       <div className="rounded-xl border-2 border-gray-200 p-1 bg-base-100">
         <div className="hero rounded-xl bg-[#9538E2] ">
           <div className="hero-content pt-20 sm:pt-28 pb-48 text-center">
@@ -15,7 +15,7 @@ const Banner = ({ title, subtitle }) => {
           </div>
         </div>
       </div>
-      <div className=" relative top-[-11rem] flex justify-center ">
+      <div className=" relative border-b-2 top-[-11rem] flex justify-center ">
         <figure className=" flex justify-center ">
           <img
             className="imageContainer border-2 border-gray-200 p-3 rounded-xl bg-transparent w-2/3 "

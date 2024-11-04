@@ -10,9 +10,8 @@ const MainLayout = () => {
         <Nav></Nav>
       </div>
       {/* Dynamic body */}
-      <div className="min-h-[calc(100vh-288px)]">
-        <Outlet />
-      </div>
+
+      <Outlet />
       {/* footer */}
       <Footer></Footer>
     </div>
