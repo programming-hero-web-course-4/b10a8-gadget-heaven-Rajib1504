@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-// import Banner from "../assets/Components/Banner";
+import Banner from "../assets/Components/Banner";
 // import DynamicComponents from "../assets/Components/DynamicComponents";
 
 const Home = () => {
@@ -9,12 +9,12 @@ const Home = () => {
     <div className="bg-base-200">
       im the home
       {/* banner with btn & hero img */}
-      {/* <Banner
+      <Banner
         title={"Upgrade Your Tech Accessorize with Gadget Heaven Accessories"}
         subtitle={
           "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
         }
-      ></Banner> */}
+      ></Banner>
       {/* title */}
       {/* Dynamic nested components */}
       {/* Catagories section */}
