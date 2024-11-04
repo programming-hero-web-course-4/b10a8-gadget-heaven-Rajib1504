@@ -1,16 +1,15 @@
-const Banner = () => {
+import PropTypes from "prop-types";
+const Banner = ({ title, subtitle }) => {
   return (
     <div className="relative top-[-6rem] z-20 ">
       <div className="rounded-xl border-2 border-gray-200 p-1 bg-base-100">
         <div className="hero rounded-xl bg-[#9538E2] ">
-          <div className="hero-content pt-28 pb-48 text-center">
-            <div className="max-w-lg">
-              <h1 className="text-5xl text-white font-bold">Hello there</h1>
-              <p className=" text-white py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
-              </p>
+          <div className="hero-content pt-20 sm:pt-28 pb-48 text-center">
+            <div className="flex-col flex items-center text-center">
+              <h1 className=" text-2xl sm:text-3xl md:text-5xl text-white w-full sm:w-[70%]  font-bold">
+                {title}
+              </h1>
+              <p className=" text-white max-w-xl py-6">{subtitle}</p>
               <button className="btn rounded-2xl bg-white">Shop Now</button>
             </div>
           </div>
@@ -27,6 +26,10 @@ const Banner = () => {
       </div>
     </div>
   );
+};
+Banner.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
 };
 
 export default Banner;

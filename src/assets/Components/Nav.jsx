@@ -59,7 +59,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end gap-4">
+        <div className="navbar-end  gap-2 sm:gap-4">
           <a className="rounded-full bg-white  p-1">
             <IoCartOutline className="text-xl" />
           </a>
