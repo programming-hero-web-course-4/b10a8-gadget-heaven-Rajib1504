@@ -1,10 +1,15 @@
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Nav = () => {
+  const { pathname } = useLocation();
   return (
     <div className="mt-5">
-      <div className="navbar bg-transparent">
+      <div
+        className={`navbar ${
+          pathname === "/home" ? "bg-[#9538E2] text-white" : " "
+        } `}
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -17,7 +22,7 @@ const Nav = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="white"
+                stroke={`${pathname === "/home" ? "white" : "black"}`}
               >
                 <path
                   strokeLinecap="round"
@@ -29,43 +34,43 @@ const Nav = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black "
             >
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <Link to={"/home"}>Home</Link>
               </li>
               <li>
-                <NavLink to={"/Statistics"}>Statistics</NavLink>
+                <Link to={"/Dashbord"}>Dashbord</Link>
               </li>
               <li>
-                <NavLink to={"/Dashbord"}>Dashbord</NavLink>
+                <Link to={"/Statistics"}>Statistics</Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost hover:bg-transparent text-white font-bold text-2xl">
+          <a className="btn btn-ghost hover:bg-transparent  font-bold text-2xl">
             Gadget World
           </a>
         </div>
-        <div className="navbar-center text-white hidden lg:flex">
+        <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-2 font-semibold px-1">
             <li>
-              <NavLink to={"/"}>Home</NavLink>
+              <Link to={"/home"}>Home</Link>
             </li>
             <li>
-              <NavLink to={"/Statistics"}>Statistics</NavLink>
+              <Link to={"/Dashbord"}>Dashbord</Link>
             </li>
             <li>
-              <NavLink to={"/Dashbord"}>Dashbord</NavLink>
+              <Link to={"/Statistics"}>Statistics</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end  gap-2 sm:gap-4">
           <a className="rounded-full bg-white  p-1">
-            <IoCartOutline className="text-xl" />
+            <IoCartOutline className="text-xl text-black" />
           </a>
           <a className="rounded-full bg-white  p-1 ">
             {" "}
-            <IoIosHeartEmpty className="text-xl" />
+            <IoIosHeartEmpty className="text-xl text-black" />
           </a>
         </div>
       </div>

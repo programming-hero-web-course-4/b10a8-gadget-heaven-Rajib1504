@@ -5,10 +5,9 @@ import Nav from "../assets/Components/Nav";
 const MainLayout = () => {
   return (
     <div>
-      <div className="relative z-[1000] ">
-        {/* nav */}
-        <Nav></Nav>
-      </div>
+      {/* nav */}
+      <Nav></Nav>
+
       {/* Dynamic body */}
 
       <Outlet />
