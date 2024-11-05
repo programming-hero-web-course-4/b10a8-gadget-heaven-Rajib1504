@@ -3,14 +3,11 @@ import { Link } from "react-router-dom";
 const Card = ({ product }) => {
   console.log(product);
   const { product_id, price, product_title, product_image } = product;
-  // const handelCardId = (id) => {
-  //   console.log(id);
-  //   <Link to={`card/${id}`}></Link>;
-  // };
+
   return (
     <div>
       {/* card  */}
-      {/* <h1>{product_title}</h1> */}
+
       <div className="bg-base-100 w-[300px]  rounded-xl hover:scale-105 shadow-lg">
         <figure className="pt-5 px-5">
           <img
@@ -25,10 +22,7 @@ const Card = ({ product }) => {
             price : <span>{price}</span>
           </p>
           <div className="">
-            <button
-              // onClick={() => handelCardId(product_id)}
-              className="btn bg-transparent hover:bg-[#9538e2bb] border-1 border-[#9538e267] rounded-full mt-1 px-5 py-2 min-h-0 h-auto"
-            >
+            <button className="btn bg-transparent hover:bg-[#9538e2bb] border-1 border-[#9538e267] rounded-full mt-1 px-5 py-2 min-h-0 h-auto">
               View Details
             </button>
           </div>

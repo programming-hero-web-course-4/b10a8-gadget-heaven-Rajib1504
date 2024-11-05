@@ -22,7 +22,7 @@ const router = createBrowserRouter([
           {
             path: "/home/product/:Categorys",
             element: <Products></Products>,
-            loader: () => fetch("/gudget.json"),
+            // loader: () => fetch("/gudget.json"),
           },
         ],
       },

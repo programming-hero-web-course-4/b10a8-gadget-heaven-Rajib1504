@@ -1,7 +1,6 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../assets/Components/Banner";
 import HeroText from "../assets/Components/HeroText";
-// import Card from "../assets/Components/Card";
 import CategoriyBtn from "../assets/Components/CategoriyBtn";
 const Home = () => {
   const catagories = useLoaderData();
