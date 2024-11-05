@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import Dashbord from "../Pages/Dashbord";
@@ -20,9 +20,14 @@ const router = createBrowserRouter([
         loader: () => fetch("/Categories.json"),
         children: [
           {
+            path: "/home",
+            element: (
+              <Navigate to="/home/product/acessories" replace></Navigate>
+            ),
+          },
+          {
             path: "/home/product/:Categorys",
             element: <Products></Products>,
-            // loader: () => fetch("/gudget.json"),
           },
         ],
       },

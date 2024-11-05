@@ -7,7 +7,7 @@ const Nav = () => {
     <div className="">
       <div
         className={`navbar rounded-t-xl ${
-          pathname === "/home" ? "bg-[#9538E2] text-white" : " "
+          pathname.includes("/home") ? "bg-[#9538E2] text-white" : " "
         } `}
       >
         <div className="navbar-start">
