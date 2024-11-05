@@ -1,6 +1,12 @@
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const Card = ({ catagory }) => {
   // console.log(catagory);
-  const { price, product_title, product_image } = catagory;
+  const { product_id, price, product_title, product_image } = catagory;
+  const handelCardId = (id) => {
+    console.log(id);
+    <Link to={`card/${id}`}></Link>;
+  };
   return (
     <div>
       {/* card  */}
@@ -18,7 +24,10 @@ const Card = ({ catagory }) => {
             price : <span>{price}</span>
           </p>
           <div className="">
-            <button className="btn bg-transparent hover:bg-[#9538e2bb] border-1 border-[#9538e267] rounded-full mt-1 px-5 py-2 min-h-0 h-auto">
+            <button
+              onClick={() => handelCardId(product_id)}
+              className="btn bg-transparent hover:bg-[#9538e2bb] border-1 border-[#9538e267] rounded-full mt-1 px-5 py-2 min-h-0 h-auto"
+            >
               View Details
             </button>
           </div>
@@ -26,6 +35,10 @@ const Card = ({ catagory }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  catagory: PropTypes.object,
 };
 
 export default Card;

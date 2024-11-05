@@ -4,9 +4,9 @@ import { Link, useLocation } from "react-router-dom";
 const Nav = () => {
   const { pathname } = useLocation();
   return (
-    <div className="rounded-xl rounded-b-none border-2 border-b-0 mt-2 border-gray-200 p-1 pb-0 bg-base-100">
+    <div className="">
       <div
-        className={`navbar rounded-xl border-x-2 border-t-2 px-2 rounded-b-none border-gray-200 p-2 mx-w-[1511px] w-[1510px] mx-auto ${
+        className={`navbar rounded-t-xl ${
           pathname === "/home" ? "bg-[#9538E2] text-white" : " "
         } `}
       >
