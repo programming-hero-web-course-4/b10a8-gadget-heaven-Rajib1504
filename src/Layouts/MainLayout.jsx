@@ -5,7 +5,7 @@ import Banner from "../assets/Components/Banner";
 const MainLayout = () => {
   return (
     <div>
-      <div className="rounded-xl border-2   p-2 border-red-600  bg-base-100 ">
+      <div className="rounded-xl border-2 p-1 border-gray-300  bg-base-100 ">
         {" "}
         {/* nav */}
         <Nav></Nav>
