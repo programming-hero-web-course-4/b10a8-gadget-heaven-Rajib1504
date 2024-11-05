@@ -1,16 +1,18 @@
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-const Card = ({ catagory }) => {
-  // console.log(catagory);
-  const { product_id, price, product_title, product_image } = catagory;
-  const handelCardId = (id) => {
-    console.log(id);
-    <Link to={`card/${id}`}></Link>;
-  };
+// import PropTypes from "prop-types";
+// import { Link } from "react-router-dom";
+const Card = () => {
+  // console.log(card);
+  // const { product_id, price, product_title, product_image } = card;
+  // const handelCardId = (id) => {
+  //   console.log(id);
+  //   <Link to={`card/${id}`}></Link>;
+  // };
   return (
     <div>
       {/* card  */}
-      <div className="bg-base-100 w-[300px]  rounded-xl hover:scale-105 shadow-lg">
+      Im card load data on me
+      {/* <h1>{product_title}</h1> */}
+      {/* <div className="bg-base-100 w-[300px]  rounded-xl hover:scale-105 shadow-lg">
         <figure className="pt-5 px-5">
           <img
             src={product_image}
@@ -25,20 +27,18 @@ const Card = ({ catagory }) => {
           </p>
           <div className="">
             <button
-              onClick={() => handelCardId(product_id)}
+              // onClick={() => handelCardId(product_id)}
               className="btn bg-transparent hover:bg-[#9538e2bb] border-1 border-[#9538e267] rounded-full mt-1 px-5 py-2 min-h-0 h-auto"
             >
               View Details
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-Card.propTypes = {
-  catagory: PropTypes.object,
-};
+Card.propTypes = {};
 
 export default Card;

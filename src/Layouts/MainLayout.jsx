@@ -17,10 +17,9 @@ const MainLayout = () => {
           }
         ></Banner>
       </div>
-
-      {/* Dynamic body */}
-
+      {/* Dynamic nested component  */}
       <Outlet />
+
       {/* footer */}
       <Footer></Footer>
     </div>
