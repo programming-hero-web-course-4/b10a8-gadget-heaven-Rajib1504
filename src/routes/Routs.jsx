@@ -5,6 +5,7 @@ import Dashbord from "../Pages/Dashbord";
 import Statistics from "../Pages/Statistics";
 import ErrorPage from "../Pages/ErrorPage";
 import Card from "../assets/Components/Card";
+import Products from "../assets/Components/Products";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +20,9 @@ const router = createBrowserRouter([
         loader: () => fetch("/Categories.json"),
         children: [
           {
-            path: "category",
-            element: <Card></Card>,
+            path: "/home/product/:Categorys",
+            element: <Products></Products>,
+            loader: () => fetch("/gudget.json"),
           },
         ],
       },

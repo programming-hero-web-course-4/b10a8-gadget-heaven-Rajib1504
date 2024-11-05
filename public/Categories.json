@@ -1,11 +1,11 @@
 [
   {
-    "product_id": 2,
+    "product_id": 1,
     "product_title": "Bose Comfort Earbuds",
     "category": "acessories"
   },
   {
-    "product_id": 1,
+    "product_id": 2,
     "product_title": "DJI Mavic Air 2",
     "category": "drone"
   },

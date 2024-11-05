@@ -1,8 +1,8 @@
-// import PropTypes from "prop-types";
-// import { Link } from "react-router-dom";
-const Card = () => {
-  // console.log(card);
-  // const { product_id, price, product_title, product_image } = card;
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+const Card = ({ product }) => {
+  console.log(product);
+  const { product_id, price, product_title, product_image } = product;
   // const handelCardId = (id) => {
   //   console.log(id);
   //   <Link to={`card/${id}`}></Link>;
@@ -10,14 +10,13 @@ const Card = () => {
   return (
     <div>
       {/* card  */}
-      Im card load data on me
       {/* <h1>{product_title}</h1> */}
-      {/* <div className="bg-base-100 w-[300px]  rounded-xl hover:scale-105 shadow-lg">
+      <div className="bg-base-100 w-[300px]  rounded-xl hover:scale-105 shadow-lg">
         <figure className="pt-5 px-5">
           <img
             src={product_image}
             alt={product_title}
-            className="rounded-xl bg-center h-[170px]"
+            className="rounded-xl mx-auto w-full object-cover bg-center h-[170px]"
           />
         </figure>
         <div className="flex flex-col px-6 pt-3 gap-1 pb-5 rounded-xl items-start ">
@@ -34,11 +33,14 @@ const Card = () => {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
 
-Card.propTypes = {};
+Card.propTypes = {
+  catagory: PropTypes.object,
+  card: PropTypes.object,
+};
 
 export default Card;
