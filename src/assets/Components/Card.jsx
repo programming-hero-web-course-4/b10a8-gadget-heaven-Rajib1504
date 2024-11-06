@@ -22,9 +22,12 @@ const Card = ({ product }) => {
             price : <span>{price}</span>
           </p>
           <div className="">
-            <button className="btn bg-transparent hover:bg-[#9538e2bb] border-1 border-[#9538e267] rounded-full mt-1 px-5 py-2 min-h-0 h-auto">
+            <Link
+              to={`/productDetails/${product_id}`}
+              className="btn bg-transparent hover:bg-[#9538e2bb] border-1 border-[#9538e267] rounded-full mt-1 px-5 py-2 min-h-0 h-auto"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         </div>
       </div>

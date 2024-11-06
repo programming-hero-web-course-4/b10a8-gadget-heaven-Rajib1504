@@ -6,6 +6,9 @@ import Statistics from "../Pages/Statistics";
 import ErrorPage from "../Pages/ErrorPage";
 import Card from "../assets/Components/Card";
 import Products from "../assets/Components/Products";
+import ProductDetails from "../assets/Components/productDetails/ProductDetails";
+import CartList from "../assets/Components/CartList";
+import Wishlist from "../assets/Components/Wishlist";
 
 const router = createBrowserRouter([
   {
@@ -31,9 +34,24 @@ const router = createBrowserRouter([
           },
         ],
       },
+
       {
         path: "/Dashbord",
         element: <Dashbord></Dashbord>,
+        children: [
+          {
+            path: "/Dashbord/cart",
+            element: <CartList></CartList>,
+          },
+          {
+            path: "/Dashbord/wishlist",
+            element: <Wishlist></Wishlist>,
+          },
+        ],
+      },
+      {
+        path: "/productDetails/:product_id",
+        element: <ProductDetails></ProductDetails>,
       },
       {
         path: "/Statistics",
