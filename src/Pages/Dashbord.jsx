@@ -16,6 +16,7 @@ const Dashbord = () => {
     setCart(cartData);
     setWishList(wishData);
   }, []);
+
   return (
     <div>
       <div className=" w-[100vw] bg-[#9538E2] text-center p-4">

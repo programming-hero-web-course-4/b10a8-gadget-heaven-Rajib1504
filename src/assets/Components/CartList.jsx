@@ -14,7 +14,7 @@ const CartList = ({ scart, setCart, cart }) => {
   } = scart || {};
   return (
     <div className="mt-4">
-      <div className="border-2 border-red-500 p-3 w-[80%] items-center mx-auto rounded-xl flex justify-around mb-2">
+      <div className="border-2 p-3 w-[80%] items-center mx-auto rounded-xl flex justify-around mb-2">
         <figure>
           <img className="w-[170px]" src={product_image} alt="" />
         </figure>

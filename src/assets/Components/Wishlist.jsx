@@ -1,5 +1,6 @@
 import { TiDeleteOutline } from "react-icons/ti";
 import { removeFromLcalStorage } from "../../utils";
+import { Link } from "react-router-dom";
 const Wishlist = ({ item, setCart, cart }) => {
   const {
     product_id,
@@ -25,9 +26,11 @@ const Wishlist = ({ item, setCart, cart }) => {
               <span>Price : $</span>
               <span>{price}</span>
             </h4>
-            <button className="bg-[#9538E2] w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white">
-              Add to cart
-            </button>
+            <Link to="/Dashbord/cart">
+              <button className="bg-[#9538E2] w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white">
+                Add to cart
+              </button>
+            </Link>
           </div>
           <TiDeleteOutline
             onClick={() => {
