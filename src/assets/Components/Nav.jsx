@@ -40,10 +40,13 @@ const Nav = () => {
                 <Link to={"/home"}>Home</Link>
               </li>
               <li>
+                <Link to={"/Statistics"}>Statistics</Link>
+              </li>
+              <li>
                 <Link to={"/Dashbord"}>Dashbord</Link>
               </li>
               <li>
-                <Link to={"/Statistics"}>Statistics</Link>
+                <Link to={"/About"}>About Us</Link>
               </li>
             </ul>
           </div>
@@ -57,10 +60,13 @@ const Nav = () => {
               <Link to={"/home"}>Home</Link>
             </li>
             <li>
+              <Link to={"/Statistics"}>Statistics</Link>
+            </li>
+            <li>
               <Link to={"/Dashbord"}>Dashbord</Link>
             </li>
             <li>
-              <Link to={"/Statistics"}>Statistics</Link>
+              <Link to={"/About"}>About Us</Link>
             </li>
           </ul>
         </div>

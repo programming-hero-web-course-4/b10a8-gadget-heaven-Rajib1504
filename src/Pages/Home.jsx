@@ -1,11 +1,14 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Outlet, useLoaderData, useParams } from "react-router-dom";
 import Banner from "../assets/Components/Banner";
+import { useEffect } from "react";
 import HeroText from "../assets/Components/HeroText";
 import CategoriyBtn from "../assets/Components/CategoriyBtn";
 const Home = () => {
   const catagories = useLoaderData();
-  // console.log(catagories);
-
+  const { Categorys } = useParams();
+  useEffect(() => {
+    document.title = `Home | ${Categorys}`;
+  }, [Categorys]);
   return (
     <div className="bg-base-200 ">
       <Banner></Banner>

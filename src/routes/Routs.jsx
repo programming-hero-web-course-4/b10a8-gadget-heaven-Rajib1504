@@ -9,6 +9,7 @@ import Products from "../assets/Components/Products";
 import ProductDetails from "../assets/Components/productDetails/ProductDetails";
 import CartList from "../assets/Components/CartList";
 import Wishlist from "../assets/Components/Wishlist";
+import About from "../Pages/About";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     element: <MainLayout></MainLayout>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
+      {
+        path: "/",
+        element: <Navigate to={"/home"} replace></Navigate>,
+      },
       {
         // index: true,
         path: "/home",
@@ -60,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/category",
         element: <Card></Card>,
+      },
+      {
+        path: "/About",
+        element: <About></About>,
       },
     ],
   },

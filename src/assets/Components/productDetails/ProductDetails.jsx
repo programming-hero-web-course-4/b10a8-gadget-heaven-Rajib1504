@@ -8,6 +8,7 @@ const ProductDetails = () => {
   const { product_id } = useParams();
   console.log(product_id);
   const [allProduct, setAllProduct] = useState([]);
+  const [disable, setDisable] = useState(false);
   useEffect(() => {
     fetch("../gudget.json")
       .then((res) => res.json())
@@ -82,13 +83,19 @@ const ProductDetails = () => {
                 </div>
                 <div className="flex gap-3 items-center mt-4">
                   <button
-                    onClick={() => addToLocalStorage(filterProduct, "cart")}
+                    onClick={() => {
+                      addToLocalStorage(filterProduct, "cart");
+                    }}
                     className="btn bg-[#9538E2] hover:text-black text-white"
                   >
                     Add to Cart <IoCartOutline />
                   </button>
                   <button
-                    onClick={() => addToLocalStorage(filterProduct, "wishList")}
+                    disabled={disable}
+                    onClick={() => {
+                      addToLocalStorage(filterProduct, "wishList");
+                      setDisable(true);
+                    }}
                     className=" flex justify-center items-center border border-[#9538E2] rounded-full w-10 h-10 "
                   >
                     {" "}

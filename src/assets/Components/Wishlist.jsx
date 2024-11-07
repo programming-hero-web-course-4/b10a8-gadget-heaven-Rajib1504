@@ -1,17 +1,10 @@
+/* eslint-disable react/prop-types */
 import { TiDeleteOutline } from "react-icons/ti";
 import { removeFromLcalStorage } from "../../utils";
 import { Link } from "react-router-dom";
-const Wishlist = ({ item, setCart, cart }) => {
-  const {
-    product_id,
-    product_title,
-    product_image,
-    price,
-    description,
-    Specification,
-    availability,
-    rating,
-  } = item || {};
+const Wishlist = ({ item }) => {
+  const { product_id, product_title, product_image, price, description } =
+    item || {};
   return (
     <div>
       <div className="mt-4">
@@ -26,22 +19,13 @@ const Wishlist = ({ item, setCart, cart }) => {
               <span>Price : $</span>
               <span>{price}</span>
             </h4>
-            <Link to="/Dashbord/cart">
+            <Link>
               <button className="bg-[#9538E2] w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white">
                 Add to cart
               </button>
             </Link>
           </div>
-          <TiDeleteOutline
-            onClick={() => {
-              removeFromLcalStorage("cart", product_id);
-              const remainingProducts = cart.filter(
-                (item) => item.product_id !== product_id
-              );
-              setCart(remainingProducts);
-            }}
-            className="text-5xl font-light text-red-600"
-          />
+          <TiDeleteOutline className="text-xl font-light text-red-600" />
         </div>
       </div>
     </div>
