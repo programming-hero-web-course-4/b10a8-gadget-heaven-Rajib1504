@@ -1,7 +1,7 @@
 import { FaSort } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { getAllSavedData } from "../utils";
-import { NavLink } from "react-router-dom";
+import { getAllSavedData, removeFromLcalStorage } from "../utils";
+import { Link, NavLink } from "react-router-dom";
 import CartList from "../assets/Components/CartList";
 import Wishlist from "../assets/Components/Wishlist";
 
@@ -85,7 +85,14 @@ const Dashbord = () => {
                 >
                   <span> Sort by</span> <FaSort />
                 </button>
-                <button className="bg-[#9538E2] w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white">
+                <button
+                  disabled={cart.length < 1}
+                  onClick={() => {
+                    localStorage.removeItem("cart");
+                    document.getElementById("my_modal_1").showModal();
+                  }}
+                  className="bg-[#9538E2] w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white"
+                >
                   Purchase
                 </button>
               </div>
@@ -111,6 +118,24 @@ const Dashbord = () => {
         )}
         {/* <Outlet></Outlet> */}
       </div>
+      {/* Open the modal using document.getElementById('ID').showModal() method */}
+
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">Hello!</h3>
+          <p className="py-4">
+            Press ESC key or click the button below to close
+          </p>
+          <div className="modal-action">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <Link to="/home" className="btn">
+                Close
+              </Link>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };

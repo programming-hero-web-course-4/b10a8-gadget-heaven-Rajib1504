@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 const Banner = () => {
   return (
@@ -12,7 +13,10 @@ const Banner = () => {
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <button className="btn rounded-2xl mb-5 bg-white">Shop Now</button>
+
+          <Link to="/Dashbord" className="btn rounded-2xl mb-5 bg-white">
+            Shop Now
+          </Link>
           <img
             className="imageContainer border-2 border-gray-200 p-2 rounded-xl bg-transparent w-2/3 "
             src="https://i.ibb.co/sRStmcP/Rectangle-1.png"

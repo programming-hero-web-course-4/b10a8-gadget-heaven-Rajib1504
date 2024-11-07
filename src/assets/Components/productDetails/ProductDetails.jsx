@@ -3,6 +3,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { useParams } from "react-router-dom";
 import { addToLocalStorage } from "../../../utils";
+import { toast } from "react-toastify";
 
 const ProductDetails = () => {
   const { product_id } = useParams();
@@ -84,7 +85,9 @@ const ProductDetails = () => {
                 <div className="flex gap-3 items-center mt-4">
                   <button
                     onClick={() => {
-                      addToLocalStorage(filterProduct, "cart");
+                      availability
+                        ? addToLocalStorage(filterProduct, "cart")
+                        : toast.error("product out of stock");
                     }}
                     className="btn bg-[#9538E2] hover:text-black text-white"
                   >
