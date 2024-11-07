@@ -8,7 +8,7 @@ import Wishlist from "../assets/Components/Wishlist";
 const Dashbord = () => {
   const [cart, setCart] = useState([]);
   const [wishList, setWishList] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
+  // const [totalPrice, setTotalPrice] = useState(0);
   const [display, setDisplay] = useState("cart");
   useEffect(() => {
     const cartData = getAllSavedData("cart");
@@ -16,6 +16,10 @@ const Dashbord = () => {
     setCart(cartData);
     setWishList(wishData);
   }, []);
+  const handelShort = () => {
+    const shortedPrice = [...cart].sort((a, b) => b.price - a.price);
+    setCart(shortedPrice);
+  };
 
   return (
     <div>
@@ -64,9 +68,12 @@ const Dashbord = () => {
           <h3 className="font-bold text-2xl ">Cart</h3>
           <div className="flex items-center gap-2 ">
             <h4 className="font-bold text-2xl ">
-              Total cost : $ <span>{totalPrice}</span>
+              Total cost : $ <span>123</span>
             </h4>
-            <button className=" w-36 p-2 rounded-full border-2 btn bg-transparent hover:bg-transparent text-[#9538E2] border-[#9538E2] flex items-center justify-center">
+            <button
+              onClick={handelShort}
+              className=" w-36 p-2 rounded-full border-2 btn bg-transparent hover:bg-transparent text-[#9538E2] border-[#9538E2] flex items-center justify-center"
+            >
               <span> Sort by</span> <FaSort />
             </button>
             <button className="bg-[#9538E2] w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white">
