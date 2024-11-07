@@ -121,24 +121,25 @@ const Dashbord = () => {
       {/* Open the modal using document.getElementById('ID').showModal() method */}
 
       <dialog id="my_modal_1" className="modal">
-        <div className="modal-box">
-          <img className="w-48" src="../assets/Group.png" alt="" />
+        <div className="modal-box p-4">
+          <img
+            className="w-20 mx-auto mb-4"
+            src="https://i.ibb.co/Jn00V6s/Group.png"
+            alt=""
+          />
           {/* <h3 className="font-bold text-lg">Hello!</h3> */}
           <div className="flex flex-col text-center justify-center items-center">
-            <h2 className="text-4xl font-bold mb-5">Payment Successful</h2>
+            <h2 className="text-4xl font-bold ">Payment Successful</h2>
             <p className="opacity-40 font-semibold">Thanks for purchasing</p>
             <p className="font-semibold">
               Total : <span>{amount}</span>
             </p>
           </div>
-          <div className="modal-action">
-            <form method="dialog ">
-              <div className="">
-                {/* if there is a button in form, it will close the modal */}
-                <Link to="/home" className="btn btn-wide  rounded-full">
-                  Close
-                </Link>
-              </div>
+          <div className="modal-action mt-3">
+            <form method="dialog w-full">
+              <Link to="/home" className="btn btn-wide  rounded-full">
+                Close
+              </Link>
             </form>
           </div>
         </div>
