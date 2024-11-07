@@ -22,9 +22,20 @@ const Products = () => {
   return (
     <div>
       <div className="grid grid-cols-3 gap-6 ">
-        {products.map((product) => (
-          <Card key={product.product_id} product={product}></Card>
-        ))}
+        {products.length < 1 ? (
+          <div>
+            {" "}
+            <div className=" text-center w-fit mx-auto ">
+              <h4 className=" mt-28 text-2xl font-semibold mb-2 opacity-40">
+                No Data Found
+              </h4>
+            </div>
+          </div>
+        ) : (
+          products.map((product) => (
+            <Card key={product.product_id} product={product}></Card>
+          ))
+        )}
       </div>
     </div>
   );

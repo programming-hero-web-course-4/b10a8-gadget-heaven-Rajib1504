@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
@@ -80,6 +82,7 @@ const Nav = () => {
           </a>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

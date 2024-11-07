@@ -12,6 +12,7 @@ const CartList = ({ scart, setCart, cart }) => {
     availability,
     rating,
   } = scart || {};
+
   return (
     <div className="mt-4">
       <div className="border-2 p-3 w-[80%] items-center mx-auto rounded-xl flex justify-around mb-2">
