@@ -122,14 +122,19 @@ const Dashbord = () => {
 
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">
-            Press ESC key or click the button below to close
-          </p>
+          <img className="w-48" src="../assets/Group.png" alt="" />
+          {/* <h3 className="font-bold text-lg">Hello!</h3> */}
+          <div className="flex flex-col text-center justify-center items-center">
+            <h2 className="text-4xl font-bold mb-5">Payment Successfull</h2>
+            <p className="opacity-40 font-semibold">Thanks for purchasing</p>
+            <p>
+              Total : <span>{amount}</span>
+            </p>
+          </div>
           <div className="modal-action">
-            <form method="dialog">
+            <form method="dialog mx-auto">
               {/* if there is a button in form, it will close the modal */}
-              <Link to="/home" className="btn">
+              <Link to="/home" className="btn btn-wide rounded-full">
                 Close
               </Link>
             </form>
