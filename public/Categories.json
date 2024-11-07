@@ -1,22 +1,26 @@
-[
+[{
+"product_id": 1,
+    "product_title": "Bose Comfort Earbuds",
+    "category": "all product"
+},
   {
-    "product_id": 1,
+    "product_id": 2,
     "product_title": "Bose Comfort Earbuds",
     "category": "acessories"
   },
   {
-    "product_id": 2,
+    "product_id": 3,
     "product_title": "DJI Mavic Air 2",
     "category": "drone"
   },
   {
-    "product_id": 3,
+    "product_id": 4,
     "product_title": "MacBook Pro 16\"",
     "category": "laptop"
   },
   {
    
-    "product_id": 4,
+    "product_id": 5,
     "product_title": "Digital printer",
     "category": "Table"
   }

@@ -13,10 +13,14 @@ const Products = () => {
   }, [Categorys]);
 
   const handelProductCategory = (products) => {
-    const filterCategoryProduct = products.filter(
-      (product) => Categorys === product.category
-    );
-    setProducts(filterCategoryProduct);
+    if (Categorys === "all product") {
+      setProducts(products);
+    } else {
+      const filterCategoryProduct = products.filter(
+        (product) => Categorys === product.category
+      );
+      setProducts(filterCategoryProduct);
+    }
     //     console.log(filterCategoryProduct);
   };
   return (
