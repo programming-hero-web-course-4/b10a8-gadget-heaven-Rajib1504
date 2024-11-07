@@ -52,7 +52,7 @@ const ProductDetails = () => {
               <div className="my-4 text-left">
                 <h1 className="text-3xl font-bold">{product_title}</h1>
                 <h5 className="font-semibold text-lg">
-                  Price : <span>{price}</span>
+                  Price : $<span>{price}</span>
                 </h5>
                 <button
                   className={`rounded-full border-2 px-6 py-2 ${

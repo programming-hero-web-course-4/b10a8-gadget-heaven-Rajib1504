@@ -19,7 +19,7 @@ const Card = ({ product }) => {
         <div className="flex flex-col px-6 pt-3 gap-1 pb-5 rounded-xl items-start ">
           <h2 className="card-title font-bold">{product_title}</h2>
           <p className="opacity-80">
-            price : <span>{price}</span>
+            price : $<span>{price}</span>
           </p>
           <div className="">
             <Link
