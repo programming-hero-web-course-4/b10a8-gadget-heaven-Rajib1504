@@ -25,12 +25,12 @@ const Products = () => {
   };
   return (
     <div>
-      <div className="grid grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-6 ">
         {products.length < 1 ? (
           <div>
             {" "}
-            <div className=" text-center w-fit mx-auto ">
-              <h4 className=" mt-28 text-2xl font-semibold mb-2 opacity-40">
+            <div className=" text-center md:w-fit  col-span-2">
+              <h4 className=" mb:mt-28 text-2xl font-semibold mb-2 opacity-40">
                 No Data Found
               </h4>
             </div>

@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div className="">
       <div
-        className={`navbar rounded-t-xl ${
+        className={`navbar  ${
           pathname.includes("/home") ? "bg-[#9538E2] text-white" : " "
         } `}
       >

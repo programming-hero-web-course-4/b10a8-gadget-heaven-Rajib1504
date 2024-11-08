@@ -8,8 +8,8 @@ const Card = ({ product }) => {
     <div>
       {/* card  */}
 
-      <div className="bg-base-100 w-[300px]  rounded-xl hover:scale-105 shadow-lg">
-        <figure className="pt-5 px-5">
+      <div className="bg-base-100 md:w-[300px] w-full rounded-xl hover:scale-105 shadow-lg">
+        <figure className="pt-2 px-5">
           <img
             src={product_image}
             alt={product_title}

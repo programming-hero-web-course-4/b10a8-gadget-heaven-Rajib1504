@@ -1,6 +1,6 @@
 const HeroText = () => {
   return (
-    <div className="mt-60">
+    <div className=" mt-12 md:mt-60">
       <h3 className="text-3xl  text-center font-bold">
         Explore Cutting-Edge Gadgets
       </h3>

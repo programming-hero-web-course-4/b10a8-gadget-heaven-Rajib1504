@@ -4,7 +4,7 @@ import Nav from "../assets/Components/Nav";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="md: w-full">
       <div>
         {/* nav */}
         <Nav></Nav>
