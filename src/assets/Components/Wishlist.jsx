@@ -8,11 +8,15 @@ const Wishlist = ({ item }) => {
   return (
     <div>
       <div className="mt-4">
-        <div className="border-2 p-3 w-[80%] items-center mx-auto rounded-xl flex justify-around mb-2">
+        <div className="border-2 p-3 w-[80%] items-center mx-auto rounded-xl flex flex-col justify-center md:flex-row md:justify-around mb-2">
           <figure>
-            <img className="w-[170px]" src={product_image} alt="" />
+            <img
+              className="rounded-lg w-[250px] md:w-[170px]"
+              src={product_image}
+              alt=""
+            />
           </figure>
-          <div className="flex flex-col gap-2">
+          <div className="flex text-center md:text-left flex-col gap-2">
             <h2 className="text-3xl font-bold">{product_title}</h2>
             <p className="opacity-40">{description}</p>
             <h4 className="text-xl font-bold">

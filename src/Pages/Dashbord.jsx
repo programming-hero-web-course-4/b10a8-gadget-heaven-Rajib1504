@@ -73,15 +73,15 @@ const Dashbord = () => {
       <div className="">
         {display === "cart" ? (
           <div>
-            <div className="flex justify-between items-center mx-auto w-11/12 my-2">
-              <h3 className="font-bold text-3xl mt-2  ">Cart</h3>
-              <div className="flex items-center gap-2 ">
-                <h4 className="font-bold text-2xl ">
+            <div className="flex md:justify-between items-center sm:justify-center flex-wrap mx-auto w-11/12 my-2">
+              <h3 className="font-bold text-3xl md:text-3xl  mx-auto ">Cart</h3>
+              <div className="flex items-center flex-wrap gap-2 justify-center ">
+                <h4 className="font-bold text-xl md:text-2xl ">
                   Total cost : $ <span>{amount}</span>
                 </h4>
                 <button
                   onClick={handelShort}
-                  className=" w-36 p-2 rounded-full border-2 btn bg-transparent hover:bg-transparent text-[#9538E2] border-[#9538E2] flex items-center justify-center"
+                  className="w-24 md:w-36 p-2 rounded-full border-2 btn bg-transparent hover:bg-transparent text-[#9538E2] border-[#9538E2] flex items-center justify-center"
                 >
                   <span> Sort by</span> <FaSort />
                 </button>
@@ -91,7 +91,7 @@ const Dashbord = () => {
                     localStorage.removeItem("cart");
                     document.getElementById("my_modal_1").showModal();
                   }}
-                  className="bg-[#9538E2] w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white"
+                  className="bg-[#9538E2] w-24 md:w-36 p-2 hover:bg-[#9538E2] btn rounded-full text-white"
                 >
                   Purchase
                 </button>
@@ -109,7 +109,9 @@ const Dashbord = () => {
         ) : (
           <div>
             <div className="w-11/12 mx-auto">
-              <h3 className="font-bold text-3xl mt-2">Wish List</h3>
+              <h3 className="font-bold text-3xl md:text-left text-center">
+                Wish List
+              </h3>
             </div>
             {wishList.map((item) => (
               <Wishlist key={item.product_id} item={item}></Wishlist>
