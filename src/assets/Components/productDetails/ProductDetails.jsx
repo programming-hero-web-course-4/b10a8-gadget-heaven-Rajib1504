@@ -31,7 +31,7 @@ const ProductDetails = () => {
   } = filterProduct || {};
 
   return (
-    <div className="hero h-80 mb-96 rounded-br-xl bg-[#9538E2] ">
+    <div className="hero h-80 sm:mb-[22rem] mb-[49rem] md:mb-96 rounded-br-xl bg-[#9538E2] ">
       <div className="hero-content text-center">
         <div className="flex-col flex items-center text-center">
           <h1 className=" text-xl sm:text-2xl md:text-3xl text-white w-full sm:w-[70%]  font-bold">
